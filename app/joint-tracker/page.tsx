@@ -1,5 +1,10 @@
-import JointAngleTracker from "@/components/JointAngleTracker";
+import dynamic from "next/dynamic";
 
-export default function JointTrackerPage() {
+const JointAngleTracker = dynamic(
+  () => import("@/components/JointAngleTracker"),
+  { ssr: false }
+);
+
+export default function Page() {
   return <JointAngleTracker />;
 }
