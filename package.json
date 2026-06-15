@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mediapipe/pose": "0.5.1635988162"
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "next": "^16.2.9",
