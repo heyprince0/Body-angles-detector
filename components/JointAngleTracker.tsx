@@ -111,7 +111,7 @@ export default function JointAngleTracker() {
     const initializePoseDetection = async () => {
       try {
         // Dynamically import modules to avoid build-time issues
-        const tf = await import("@tensorflow/tfjs-core").then((m) => m.default);
+        const tf = await import("@tensorflow/tfjs-core");
         await import("@tensorflow/tfjs-backend-webgl");
         const { createDetector, SupportedModels } = await import(
           "@tensorflow-models/pose-detection"
